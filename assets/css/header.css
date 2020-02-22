@@ -102,7 +102,7 @@ p{
 #box7{
   width : 250px;
   height : 250px;
-  background : url("./assets/images/smallImage.png");
+  background : url("{{ site.baseurl}}/assets/images/smallImage.png");
   margin: 0 auto;
   border-radius :60%;
   border : 5px solid black;
