@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+  font-family : 'Roboto',sans-serif;
+  font-weight: lighter;
+  text-align : center;
+
+}
+h1{
+  color : blue;
+  font-size : 2.5rem;
+  text-transform : capitalize;
+  text-decoration: line-through;
+}
+p{
+  text-indent: 200px;
+}
+/* *{
+  margin :0;
+  padding: 10;
+  box-sizing : border-box;
+  word-spacing: 1em;
+}
+*/
+.navbar{
+  width : 100vw;
+  background:red;
+  height:100px;
+}
+.banner{
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background : green;
+}
+
+-.outer{
+  width:300px;
+  height:200px;
+  background : blue;
+}
+.inner{
+  width : 80%;
+  height :50%;
+  background :red;
+}
+
+#box1{
+  width : 200px;
+  height : 200px;
+  margin : 10px auto;
+  background : yellow;
+  outline : 2px solid black;
+  outline-offset:10px;
+}
+#box2{
+  width : 100px;
+  height : 100px;
+  background : green;
+  margin:0 auto;
+  border-radius :60%;
+  border : 5px solid black;
+}
+#box3{
+  display : inline-block;
+  width : 100px;
+  height : 100px;
+  background : green;
+  border-radius :60%;
+  border : 5px solid black;
+}
+#box4{
+  display : inline-block;
+  width : 100px;
+  height : 100px;
+  background : green;
+  margin: 0 auto;
+  border-radius :60%;
+  border : 5px solid black;
+}
+#box5{
+  display : inline-block;
+  width : 100px;
+  height : 100px;
+  background : green;
+  margin: 0 auto;
+  border-radius :60%;
+  border : 5px solid black;
+}
+#box6{
+  width : 100vw;
+  height : 100vh;
+  background : url(/assets/img/big-image.jpeg);
+  margin: 0 auto;
+  font-size : 2em;
+  text-transform : uppercase;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+  text-align: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+#box7{
+  width : 250px;
+  height : 250px;
+  background : url(/assets/img/small-image.png);
+  margin: 0 auto;
+  border-radius :60%;
+  border : 5px solid black;
+}
+.conatiner{
+  display: flex;
+}
+#box8{
+  width : 250px;
+  height : 250px;
+  background :linear-gradient(red,green);
+  margin: 0 auto;
+}
+#box9{
+  width : 250px;
+  height : 250px;
+  background :linear-gradient(to left,red,green,yellow,blue);
+  margin: 0 auto;
+}
+.logo{
+  width: 100vw;
+  height: 40vh;
+  border : 5px solid black;
+  position : relative;
+}
+.circle{
+  position: absolute;
+}
+.c1{
+  top:30%;
+  left:52%;
+  width: 100px;
+  height: 100px;
+  border-radius : 50%;
+  background : red;
+  border:1px solid blue;
+}
+.c2{
+  top:27%;
+  left:50%;
+  width: 120px;
+  height: 120px;
+  border-radius : 50%;
+  border:1px solid blue;
+}
+.c3{
+  top:25%;
+  left:49%;
+  width: 130px;
+  border-radius : 50%;
+  height: 130px;
+  border:1px solid blue;
+}
+#bfr{
+  clear: both;
+}
+
+#bfr::before{
+  content:'';
+  display:block;
+  width:20px;
+  height: 20px;
+  border:5px solid black;
+  border-radius:50%;
+  float: left;
+}
+#bfr::after{
+  content:'';
+  display: block;
+  width:20px;
+  height: 20px;
+  border: 5px solid black;
+  border-radius : 50%;
+  float: right;
+}
+.imgbnr{
+  width: 200px;
+  height:100px;
+  position:relative;
+  left:40%;
+}
+.imgbnr::before{
+  content:'';
+  border:2px solid grey;
+  width:100%;
+  height:100%;
+  position:absolute;
+  box-sizing:border-box;
+  top:0;
+  left:0;
+  z-index:-2;
+  transition:all 0.5s linear;
+}
+.imgbnr::after{
+  content:'';
+  width:100%;
+  height:100%;
+  position:absolute;
+  box-sizing:border-box;
+  top:0;
+  left:0;
+  z-index:-1;
+  background : grey;
+  transition: all 0.5s linear;
+}
+#img1{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.imgbnr:hover::before {
+  top:-40px;
+  left:-40px;
+}
+.imgbnr:hover::after{
+  top:-20px;
+  left:-20px;
+}
+.box{
+  width:100px;
+  height:100px;
+  background : grey;
+  border:2px solid black;
+  transition : all 1s linear;
+}
+.b1:hover{
+  transform: translate(70vw);
+}
+.b2:hover{
+  transform: rotate(90deg);
+}
+.b3:hover{
+  transform: scaleX(-20px);
+}
+.b4:hover{
+  transform: skew(70deg);
+}
+
+.heart{
+  width:100px;
+  height:100px;
+  background: red;
+  transform : rotate(45deg);
+  margin: 0 auto;
+  position: relative;
+  animation:heart-beat 2s ease-in-out infinite;
+}
+.heart::before{
+  content :'';
+  width:100px;
+  height:100px;
+  display:block;
+  background: red;
+  border-radius : 50%;
+  position:absolute;
+  top:-50%;
+}
+.heart::after{
+  content:'';
+  width:100px;
+  height:100px;
+  display:block;
+  background: red;
+  border-radius:50%;
+  position:absolute;
+  left:-50%;
+}
+@keyframes heart-beat{
+  50%{
+    transform: rotate(45deg) scale(0.6);
+  }
+}
