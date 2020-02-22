@@ -88,7 +88,7 @@ p{
 #box6{
   width : 100vw;
   height : 100vh;
-  background : url("./assets/images/bigImage.jpeg");
+  background : url("{{ site.baseurl }}/assets/images/bigImage.jpeg");
   margin: 0 auto;
   font-size : 2em;
   text-transform : uppercase;
